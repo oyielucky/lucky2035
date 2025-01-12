@@ -20,6 +20,7 @@ public class CommentController {
     @PostMapping
     public String ctrateComment(@RequestBody Comment comment , @RequestParam long postId)
     {
+        System.out.println("learning git hub");
        Post post = postRepository.findById(postId).get();
 
        comment.setPost(post);
